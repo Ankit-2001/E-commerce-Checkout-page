@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout-page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <button class="icon"><i class="fa-solid fa-bars"></i></button>
+      <div class="title">S H O P</div>
+      <button class="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+    </header>
+    <main>
+      <div class="checkout">
+        <p class="checkout-title">Checkout</p>
+        <p class="description">
+          Shop is a demo app - form data will not be sent
+        </p>
+      </div>
+      <section class="Information">
+        <div class="left-side">
+          <div class="info">
+            <p class="account-info bold-title">Account Information</p>
+            <div class="input-container">
+              <input
+                type="email"
+                id="userEmail"
+                required
+                class="input"
+                placeholder=" "
+              />
+              <label class="label" for="userEmail">Email</label>
+              <div class="underline"></div>
+            </div>
+            <div class="input-container">
+              <input
+                type="tel"
+                id="user-phone-no"
+                required
+                class="input"
+                placeholder=" "
+              />
+              <label class="label" for="user-phone-no">Phone Number</label>
+              <div class="underline"></div>
+            </div>
+          </div>
+          <div class="info">
+            <p class="shipping-info bold-title">Shipping Address</p>
+            <div class="input-container">
+              <input
+                type="text"
+                id="userAddress"
+                required
+                class="input"
+                placeholder=" "
+              />
+              <label class="label" for="userAddress">Address</label>
+              <div class="underline"></div>
+            </div>
+            <div class="input-container">
+              <input
+                type="text"
+                id="userCity"
+                required
+                class="input"
+                placeholder=" "
+              />
+              <label class="label" for="userCity">City</label>
+              <div class="underline"></div>
+            </div>
+            <div class="more-shipping-info">
+              <div class="input-container">
+                <input
+                  type="text"
+                  id="userState"
+                  required
+                  class="input"
+                  placeholder=" "
+                />
+                <label class="label" for="userState">State/Province</label>
+                <div class="underline"></div>
+              </div>
+              <div class="input-container">
+                <input
+                  type="text"
+                  id="userCode"
+                  required
+                  class="input"
+                  placeholder=" "
+                />
+                <label class="label" for="userCode">Zip/Postal Code</label>
+                <div class="underline"></div>
+              </div>
+            </div>
+            <div class="country-selection">
+              <p>country</p>
+              <select id="country-picker">
+                <option>United States</option>
+                <option>Canada</option>
+                <option>Mexico</option>
+              </select>
+              <div class="underline"></div>
+            </div>
+            <p class="bold-title">Billing Address</p>
+            <div>
+              <input class="checkbox" type="checkbox" id="check" />
+              <label for="check">Use Default Billing Address</label>
+              <div class="default-address">
+                <div class="input-container">
+                  <input
+                    type="text"
+                    id="userAddress"
+                    required
+                    class="input"
+                    placeholder=" "
+                  />
+                  <label class="label" for="userAddress">Address</label>
+                  <div class="underline"></div>
+                </div>
+                <div class="input-container">
+                  <input
+                    type="text"
+                    id="userCity"
+                    required
+                    class="input"
+                    placeholder=" "
+                  />
+                  <label class="label" for="userCity">City</label>
+                  <div class="underline"></div>
+                </div>
+                <div class="more-shipping-info">
+                  <div class="input-container">
+                    <input
+                      type="text"
+                      id="userState"
+                      required
+                      class="input"
+                      placeholder=" "
+                    />
+                    <label class="label" for="userState">State/Province</label>
+                    <div class="underline"></div>
+                  </div>
+                  <div class="input-container">
+                    <input
+                      type="text"
+                      id="userCode"
+                      required
+                      class="input"
+                      placeholder=" "
+                    />
+                    <label class="label" for="userCode">Zip/Postal Code</label>
+                    <div class="underline"></div>
+                  </div>
+                </div>
+                <div class="country-selection">
+                  <p>country</p>
+                  <select id="country-picker">
+                    <option value="1">United States</option>
+                    <option value="2">Canada</option>
+                    <option value="3">India</option>
+                  </select>
+                  <div class="underline"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="info">
+            <p class="payment-info bold-title">Payment Method</p>
+            <div class="input-container">
+              <input
+                type="email"
+                id="cardholder-name"
+                required
+                class="input"
+                placeholder=" "
+              />
+              <label class="label" for="cardholder-name">Cardholder Name</label>
+              <div class="underline"></div>
+            </div>
+            <div class="input-container">
+              <input
+                type="text"
+                id="userCard-No"
+                required
+                class="input"
+                placeholder=" "
+              />
+              <label class="label" for="userCard-no">Card Number</label>
+              <div class="underline"></div>
+            </div>
+            <p>Expiry</p>
+            <div class="card-info">
+              <div class="input-container">
+                <select id="month-picker">
+                  <option value="1">Jan</option>
+                  <option value="2">Feb</option>
+                  <option value="3">Mar</option>
+                  <option value="4">Apr</option>
+                  <option value="5">May</option>
+                  <option value="6">Jun</option>
+                  <option value="7">Jul</option>
+                  <option value="8">Aug</option>
+                  <option value="9">Sep</option>
+                  <option value="10">Oct</option>
+                  <option value="11">Nov</option>
+                  <option value="12">Dec</option>
+                </select>
+                <div class="underline"></div>
+              </div>
+              <div class="input-container">
+                <select id="year-picker">
+                  <option value="2016">2016</option>
+                  <option value="2017">2017</option>
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                  <option value="2023">2024</option>
+                  <option value="2023">2025</option>
+                  <option value="2023">2026</option>
+                  <option value="2023">2027</option>
+                </select>
+                <div class="underline"></div>
+              </div>
+              <div class="input-container">
+                <input
+                  type="text"
+                  id="userCard-cvv"
+                  required
+                  class="input"
+                  placeholder=" "
+                />
+                <label class="label" for="userCard-cvv">CVV</label>
+                <div class="underline"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="order">
+            <p class="bold-title">Order Summary</p>
+            <div class="order-items">
+              <p>Tshirt</p>
+              <p>$15</p>
+            </div>
+            <div class="total-price">
+              <p>Price</p>
+              <p>$15</p>
+            </div>
+          </div>
+          <div class="place-order">Place Order</div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
