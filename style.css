@@ -107,6 +107,7 @@ body {
   }
 }
 .card-info {
+  margin-top: 0.5rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
@@ -164,6 +165,7 @@ input {
 .label {
   position: absolute;
   left: -0.1rem;
+  top: -0.5rem;
   color: #666;
   font-size: 1.2rem;
   pointer-events: none;
@@ -238,6 +240,7 @@ input {
     border: 2px solid black;
     text-align: center;
     width: 15rem;
+    padding: 0.5rem;
     margin-left: 2rem;
   }
 }
